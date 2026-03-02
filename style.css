@@ -562,12 +562,42 @@ html[data-theme="dark"] .theme-switch .slider {
 }
 
 
-html[data-theme="dark"] .hero {
+html[data-theme="dark"] .hero:not(.hero-inner-page) {
   background-image:
     linear-gradient(rgba(26, 42, 58, 0.9), rgba(26, 42, 58, 0.9)),
-    url("https://civicwell.org/wp-content/uploads/2013/07/feature-cultivating-community-gardens.jpg");
+    url("images/shane-rounce-DNkoNXQti3c-unsplash.jpg");
   background-size: cover;
   background-position: center;
+}
+
+html[data-theme="dark"] .hero-about {
+  background-image:
+    linear-gradient(rgba(15, 30, 45, 0.85), rgba(15, 30, 45, 0.85)),
+    url("images/clay-banks-LjqARJaJotc-unsplash.jpg");
+}
+
+html[data-theme="dark"] .hero-projects {
+  background-image:
+    linear-gradient(rgba(15, 30, 45, 0.85), rgba(15, 30, 45, 0.85)),
+    url("images/joel-muniz-3k3l2brxmwQ-unsplash.jpg");
+}
+
+html[data-theme="dark"] .hero-resources {
+  background-image:
+    linear-gradient(rgba(15, 30, 45, 0.85), rgba(15, 30, 45, 0.85)),
+    url("images/victoria-kubiaki-emPsZ6MBCUs-unsplash.jpg");
+}
+
+html[data-theme="dark"] .hero-get-involved {
+  background-image:
+    linear-gradient(rgba(15, 30, 45, 0.85), rgba(15, 30, 45, 0.85)),
+    url("images/h-u-phu-6qt7cVSN6uc-unsplash.jpg");
+}
+
+html[data-theme="dark"] .hero-contact {
+  background-image:
+    linear-gradient(rgba(15, 30, 45, 0.85), rgba(15, 30, 45, 0.85)),
+    url("images/julian-hochgesang-Dkn8-zPIbwo-unsplash.jpg");
 }
 
 html[data-theme="dark"] body{
@@ -4568,8 +4598,8 @@ html[data-theme="dark"] .contact-title{
 .contact-form iframe {
   width: 100%;
   border: 0;
-  min-height: 1550px;
-  height: 1550px;
+  min-height: 1600px;
+  height: 1600px;
   border-radius: 10px;
   display: block;
   background: transparent;
