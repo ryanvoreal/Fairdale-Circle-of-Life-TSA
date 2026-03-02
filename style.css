@@ -549,12 +549,13 @@ html[data-theme="dark"] .theme-switch .slider {
 
 /* hero section */
 .hero {
-  padding-top:8rem;
-  background:
-    linear-gradient(rgba(42, 77, 105, 0.8), rgba(42, 77, 105, 0.8)),
-    url("images/shane-rounce-DNkoNXQti3c-unsplash.jpg") center/cover no-repeat;
   padding:9rem 0;
-  background-size:cover;
+  background-image:
+    linear-gradient(rgba(42, 77, 105, 0.8), rgba(42, 77, 105, 0.8)),
+    url("images/shane-rounce-DNkoNXQti3c-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: var(--text);
   position: relative;
   box-shadow: inset 0 -4px 10px rgba(0,0,0,0.3);
@@ -562,10 +563,11 @@ html[data-theme="dark"] .theme-switch .slider {
 
 
 html[data-theme="dark"] .hero {
-  background:
+  background-image:
     linear-gradient(rgba(26, 42, 58, 0.9), rgba(26, 42, 58, 0.9)),
-    url("https://civicwell.org/wp-content/uploads/2013/07/feature-cultivating-community-gardens.jpg") center/cover no-repeat;
+    url("https://civicwell.org/wp-content/uploads/2013/07/feature-cultivating-community-gardens.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 html[data-theme="dark"] body{
