@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fairdale Circle of Care | Home</title>
+    <script>
+      (function() {
+        var theme = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var isDark = theme === 'dark' || (!theme && prefersDark);
+        document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme-initial', isDark ? 'dark' : 'light');
+      })();
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="images/Fairdale_High_logo_template_300.png">
+</head>
+<body>
+
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <div class="brand">
+                <a href="index.html" class="logo">
+                        <img src="https://cmsv2-assets.apptegy.net/uploads/21334/logo/24148/Fairdale_High_logo_template_300.png" alt="Fairdale Circle of Care Logo" />
+                        <h1 class="site-title">Fairdale Circle of Care</h1>
+                </a>
+                <p class="site-tagline">Building compassion through action — helping our local homeless community, one step at a time.</p>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="site-nav" role="navigation" aria-label="Main navigation">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <label class="theme-switch" aria-label="Toggle dark mode">
+                <input type="checkbox" id="theme-toggle" class="theme-checkbox" />
+                <span class="theme-icon theme-icon-sun" aria-hidden="true">☀</span>
+                <span class="slider"></span>
+                <span class="theme-icon theme-icon-moon" aria-hidden="true">☽</span>
+            </label>
+            <script>(function(){ var t = document.documentElement.getAttribute('data-theme'); var c = document.getElementById('theme-toggle'); if(c) c.checked = (t === 'dark'); })();</script>
+        </div>
+    </header>
+
+    <main id="main" class="hero" role="main">
+        <div class="container hero-inner">
+            <div class="hero-content reveal">
+                <h2 class="hero-title">Together, We Can Make a Difference</h2>
+                <p class="hero-lead">
+                    We’re starting small but dreaming big — from helping the homeless in our community to creating
+          spaces where students and neighbors can grow food, learn life
+          skills, and lend a helping hand.</p>
+                <div class="hero-cta">
+                    <a class="btn btn-primary" href="get-involved.html">Get Involved</a>
+                    <a class="btn btn-secondary" href="projects.html">See Projects</a>
+                </div>
+                <p class="hero-note">Every hand helps — start where you are, with what you have.</p>
+            </div>
+        </div>
+
+    </main>
+        <div class="mission reveal">
+            <div class="mission-statement">
+                <h2>Our Mission</h2>
+                <p>Our projects bring students and neighbors together to learn, grow, and help others. Through the Circle of Care, we connect our community with local resources, opportunities, and hope.</p>
+                <a class="btn btn-secondary mission-btn" href="about.html">Learn more about us</a>
+            </div>
+            <div class="mission-image">
+                <img src="images/IMG_8258.jpg" alt="Students holding donated food items for the community" />
+            </div>
+        </div>
+    <section class="efforts-section">
+        <div class="container efforts-header reveal">
+            <p class="section-eyebrow">What we do</p>
+            <h2>How We Help</h2>
+        </div>
+        <div class="efforts" data-stagger>
+            <div class="card reveal" id="gardenCard">
+                <div class="card-image">
+                    <img src="images/IMG_8283.JPG" alt="Assorted cereal boxes collected for donation" />
+                </div>
+                <h3>Community Projects</h3>
+                <p>Helping our local community through service and support.</p>
+                <a class="btn btn-secondary" href="projects.html">See Projects</a>
+            </div>
+            <div class="card reveal" id="commCard">
+                <div class="card-image">
+                    <img src="images/IMG_8388.JPG" alt="Students posing with boxes of donated items" />
+                </div>
+                <h3>Community Outreach</h3>
+                <p>Supporting our homeless neighbors with care and connection.</p>
+                <a class="btn btn-primary" href="get-involved.html">Get Involved</a>
+            </div>
+        </div>
+    </section>
+    <!-- Impact statistics section -->
+    <section class="impact">
+      <div class="container impact-layout">
+        <div class="impact-intro reveal">
+          <p class="section-eyebrow">By the numbers</p>
+          <h2>Our Impact</h2>
+          <p class="impact-desc">Every project, every volunteer hour, and every donated item adds up. Here's what we've accomplished together so far.</p>
+        </div>
+        <div class="impact-stats" data-stagger>
+          <div class="stat reveal">
+            <span class="count" data-target="100">50+</span>
+            <p>Meals Served</p>
+          </div>
+          <div class="stat reveal">
+            <span class="count" data-target="100">200+</span>
+            <p>Students Involved</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FAQ section -->
+    <section class="faq">
+      <div class="container faq-layout">
+        <div class="faq-intro reveal">
+          <p class="section-eyebrow">Got questions?</p>
+          <h2>Frequently Asked Questions</h2>
+          <p class="faq-desc">Everything you need to know about getting involved and what we do.</p>
+        </div>
+        <div class="faq-items reveal">
+          <div class="faq-item">
+            <button class="faq-question">What is the Fairdale Circle of Care?</button>
+            <div class="faq-answer">
+              <p>We are a student and community initiative focused on helping our homeless neighbors, building gardens, and teaching life skills through service projects.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">How can I volunteer?</button>
+            <div class="faq-answer">
+              <p>You can sign up through our <a href="get-involved.html">Get Involved</a> page. Opportunities include gardening, food drives, and event support.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Do I need prior experience?</button>
+            <div class="faq-answer">
+              <p>No experience is required! We welcome anyone willing to lend a helping hand and learn along the way.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Testimonials section -->
+    <section class="testimonies">
+      <div class="container">
+        <div class="testimonies-header reveal">
+          <p class="section-eyebrow">Testimonials</p>
+          <h2>What People Say</h2>
+        </div>
+        <div class="testimonials-grid" data-stagger>
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"The Fairdale Circle of Care has made a real difference in our community. Seeing students come together to help others is truly inspiring."</p>
+            <p class="testimonial-author">VOLUNTEER: MUSSA OMARR</p>
+          </div>
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"This initiative teaches our students compassion and leadership while making a tangible impact. Couldn't ask for more from a school program."</p>
+            <p class="testimonial-author">TEACHER: KATE ADAMS</p>
+          </div>
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Being part of this community garden changed my perspective on what we can achieve together. Everyone is welcome, and that means everything."</p>
+            <p class="testimonial-author">STUDENT: MAKAI GREEN</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ GET INVOLVED SECTION =========== -->
+    <section class="get-involved" id="get-involved">
+      <div class="container get-involved-layout">
+        <div class="get-involved-text reveal">
+          <p class="section-eyebrow">Join us</p>
+          <h2>Get Involved</h2>
+          <p>There are many ways to make a difference. Choose how you'd like to help:</p>
+          <ul>
+            <li><strong>Volunteer:</strong> Join us for gardening, food drives, and community events.</li>
+            <li><strong>Partner:</strong> Collaborate with your business or school to expand our impact.</li>
+          </ul>
+        </div>
+        <div class="get-involved-cta-box reveal">
+          <p>Ready to make a difference in your community?</p>
+          <a class="btn btn-primary" href="get-involved.html">Get Involved</a>
+          <a class="btn btn-secondary" href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========= FOOTER ========= -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-about">
+          <h3>Fairdale Circle of Care</h3>
+          <p>Building compassion through action — helping our local homeless community, one step at a time.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="get-involved.html">Get Involved</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>Email: <a href="mailto:dhara.patel@stu.jefferson.kyschools.us">dhara.patel@stu.jefferson.kyschools.us</a></p>
+          <p>Phone: <a href="tel:+15024858248">(502) 485-8248</a></p>
+          <p>Address: 1001 Fairdale Rd, Louisville, KY 40118</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Fairdale Circle of Care. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fairdale Circle of Care | Projects</title>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var isDark = theme === 'dark' || (!theme && prefersDark);
+      document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="images/Fairdale_High_logo_template_300.png">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="index.html" class="logo">
+          <img src="https://cmsv2-assets.apptegy.net/uploads/21334/logo/24148/Fairdale_High_logo_template_300.png" alt="Fairdale Circle of Care Logo" />
+          <h1 class="site-title">Fairdale Circle of Care</h1>
+        </a>
+        <p class="site-tagline">Building compassion through action — helping our local homeless community, one step at a time.</p>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav class="site-nav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="get-involved.html">Get Involved</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <label class="theme-switch" aria-label="Toggle dark mode">
+        <input type="checkbox" id="theme-toggle" class="theme-checkbox" />
+        <span class="theme-icon theme-icon-sun" aria-hidden="true">☀</span>
+        <span class="slider"></span>
+        <span class="theme-icon theme-icon-moon" aria-hidden="true">☽</span>
+      </label>
+      <script>(function(){ var t = document.documentElement.getAttribute('data-theme'); var c = document.getElementById('theme-toggle'); if(c) c.checked = (t === 'dark'); })();</script>
+    </div>
+  </header>
+
+  <main id="main" class="hero hero-inner-page hero-projects" role="main">
+    <div class="container hero-inner">
+      <div class="hero-content reveal">
+        <h2 class="hero-title">Building Projects That Create Change</h2>
+        <p class="hero-lead">
+          From innovative student initiatives to community-driven efforts,
+          our projects aim to make a lasting impact. Together, we're turning ideas into action — growing, learning,
+          and improving lives one project at a time.
+        </p>
+        <p class="hero-note">Small actions build big change — every project starts with a single idea.</p>
+      </div>
+    </div>
+  </main>
+
+  <section class="projects container" aria-label="Current projects">
+
+  <div class="projects-grid" data-stagger>
+
+    <!-- Project 1: Tabbed card -->
+    <div class="project-card-wrapper project-tabbed reveal">
+      <article class="project-card project-body modern project-tabbed-card">
+        <div class="project-tabbed-header">
+          <h3 class="project-name">Food Drive for the Homeless</h3>
+          <p class="project-meta"><span class="project-activity complete">Complete</span> • Nov 25 – Dec 12</p>
+        </div>
+        <div class="project-tabs" role="tablist" aria-label="Project details">
+          <button type="button" class="project-tab active" role="tab" aria-selected="true" aria-controls="proj1-overview" id="proj1-tab-overview">Overview</button>
+          <button type="button" class="project-tab" role="tab" aria-selected="false" aria-controls="proj1-timeline" id="proj1-tab-timeline">Timeline</button>
+          <button type="button" class="project-tab" role="tab" aria-selected="false" aria-controls="proj1-results" id="proj1-tab-results">Results</button>
+          <button type="button" class="project-tab" role="tab" aria-selected="false" aria-controls="proj1-photos" id="proj1-tab-photos">Photos</button>
+        </div>
+        <div class="project-tab-panels">
+          <div id="proj1-overview" class="project-tab-panel active" role="tabpanel" aria-labelledby="proj1-tab-overview">
+            <p class="project-description">We hosted a school-wide food drive to support members of our homeless community. Each Crew was assigned a food category to collect and promoted the drive through posters, social outreach, and community engagement.</p>
+            <p class="project-collecting"><strong>We collected:</strong> Non-perishable foods such as canned goods, dry rice, pasta, peanut butter, and boxed meals.</p>
+            <p class="project-impact"><strong>Impact goal:</strong> Provide meals for families in need while building student leadership.</p>
+            <div class="project-progress-container">
+              <span class="progress-label">Progress: 100%</span>
+              <progress class="project-progress complete" value="100" max="100"></progress>
+            </div>
+          </div>
+          <div id="proj1-timeline" class="project-tab-panel" role="tabpanel" aria-labelledby="proj1-tab-timeline" hidden>
+            <div class="timeline">
+              <div class="step">
+                <div class="step-marker"></div>
+                <div class="step-content">
+                  <h5>Nov 25 — Crew Planning Day</h5>
+                  <p>Crews created their plan for collecting their assigned food items.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-marker"></div>
+                <div class="step-content">
+                  <h5>Dec 1 — Collection Begins</h5>
+                  <p>Students began bringing in items; Crew Leaders collected donations daily.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-marker"></div>
+                <div class="step-content">
+                  <h5>Dec 2–3 — Poster Competition</h5>
+                  <p>Crews designed posters to advertise the drive on campus and social media.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-marker"></div>
+                <div class="step-content">
+                  <h5>Dec 12 — Final Collection Day</h5>
+                  <p>STLP students gathered all items and delivered them to the Youth Service Center.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="proj1-results" class="project-tab-panel" role="tabpanel" aria-labelledby="proj1-tab-results" hidden>
+            <p class="project-description">Thanks to our students, staff, and community partners, the food drive exceeded its goals and directly supported local families in need.</p>
+            <h4>What We Achieved</h4>
+            <ul class="project-results-list">
+              <li><strong>560+</strong> non‑perishable items collected</li>
+              <ul>
+                <li><strong>270+</strong> Canned Goods (Beans, Tomatoes, etc.)</li>
+                <li><strong>120+</strong> Rice/Grains (Rice, Grains, etc.)</li>
+                <li><strong>90+</strong> Shelf Stable Protein (PB, Jelly, etc.)</li>
+                <li><strong>60+</strong> Cereal (Froot Loops, Lucky Charms, etc.)</li>
+              </ul>
+              <li><strong>40+</strong> families supported</li>
+              <li><strong>60+</strong> classes participated</li>
+            </ul>
+            <p class="project-impact"><strong>Lasting Impact:</strong> Students practiced leadership, empathy, and community organizing while addressing food insecurity.</p>
+            <div class="impact-stats-row">
+              <div class="impact-stat"><strong>560+</strong><span>Items</span></div>
+              <div class="impact-stat"><strong>40+</strong><span>Families</span></div>
+              <div class="impact-stat"><strong>60+</strong><span>Classes</span></div>
+            </div>
+          </div>
+          <div id="proj1-photos" class="project-tab-panel project-photos-panel" role="tabpanel" aria-labelledby="proj1-tab-photos" hidden>
+            <div class="project-photos-grid">
+              <img src="images/IMG_8258.jpg" alt="Two students holding up donated items" />
+              <img src="images/circle of care.png" alt="Fundraiser guidelines and what students brought in" />
+              <img src="images/IMG_8283.JPG" alt="Assorted cereal boxes collected" />
+              <img src="images/IMG_8296 2.JPG" alt="Students next to donated boxes" />
+              <img src="images/IMG_8292.JPG" alt="Custom donation boxes made by students" />
+              <img src="images/cereal poster ex.png" alt="Custom donation poster by a student" />
+              <img src="images/IMG_8384.JPG" alt="Student designing a poster" />
+              <img src="images/IMG_8388.JPG" alt="Volunteering students helping with the project" />
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card-wrapper reveal">
+      <article class="project-card">
+        <div class="project-body modern">
+          <div class="project-tabbed-header">
+            <h3 class="project-name">New Community Project</h3>
+            <p class="project-meta"><span class="project-activity">In Development</span> • Coming Soon</p>
+          </div>
+          <p class="project-description">We are preparing a new project to expand our community initiatives.</p>
+        </div>
+      </article>
+    </div>
+
+  </div>
+</section>
+
+    <!-- ========= FOOTER ========= -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-about">
+          <h3>Fairdale Circle of Care</h3>
+          <p>Building compassion through action — helping our local homeless community, one step at a time.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="get-involved.html">Get Involved</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>Email: <a href="mailto:dhara.patel@stu.jefferson.kyschools.us">dhara.patel@stu.jefferson.kyschools.us</a></p>
+          <p>Phone: <a href="tel:+15024858248">(502) 485-8248</a></p>
+          <p>Address: 1001 Fairdale Rd, Louisville, KY 40118</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Fairdale Circle of Care. All rights reserved.</p>
+      </div>
+    </footer>
+  <script src="script.js"></script>
+</body>
+</html>

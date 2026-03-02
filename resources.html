@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fairdale Circle of Care | Community Resources</title>
+    <script>
+      (function() {
+        var theme = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var isDark = theme === 'dark' || (!theme && prefersDark);
+        document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+      })();
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="images/Fairdale_High_logo_template_300.png">
+</head>
+<body>
+
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <div class="brand">
+                <a href="index.html" class="logo">
+                    <img src="https://cmsv2-assets.apptegy.net/uploads/21334/logo/24148/Fairdale_High_logo_template_300.png" alt="Fairdale Circle of Care Logo" />
+                    <h1 class="site-title">Fairdale Circle of Care</h1>
+                </a>
+                <p class="site-tagline">Building compassion through action — helping our local homeless community, one step at a time.</p>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="site-nav" role="navigation" aria-label="Main navigation">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <label class="theme-switch" aria-label="Toggle dark mode">
+                <input type="checkbox" id="theme-toggle" class="theme-checkbox" />
+                <span class="theme-icon theme-icon-sun" aria-hidden="true">☀</span>
+                <span class="slider"></span>
+                <span class="theme-icon theme-icon-moon" aria-hidden="true">☽</span>
+            </label>
+            <script>(function(){ var t = document.documentElement.getAttribute('data-theme'); var c = document.getElementById('theme-toggle'); if(c) c.checked = (t === 'dark'); })();</script>
+        </div>
+    </header>
+
+    <main id="main" class="hero hero-inner-page hero-resources" role="main">
+        <div class="container hero-inner">
+            <div class="hero-content reveal">
+                <h2 class="hero-title">Community Resources</h2>
+                <p class="hero-lead">
+                    A directory of local organizations, programs, and services available to our community.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Resources section -->
+    <section class="efforts-section">
+        <div class="container efforts-header reveal">
+            <p class="section-eyebrow">Find help</p>
+            <h2>Local Resources</h2>
+        </div>
+        <input type="search" id="resourceSearch" placeholder="Search for a resource">
+        <div class="efforts" data-stagger>
+            <!-- Resource Card — duplicate and fill in as needed -->
+            <div class="card reveal">
+                <h3>🥫 Dare to Care Food Bank</h3>
+                <p>Louisville's largest food bank, providing emergency food assistance to families and individuals across the region. Offers food pantry access, mobile distributions, and meal programs.</p>
+                <p><strong>Phone:</strong> (502) 966-3821</p>
+                <a class="btn btn-secondary" href="https://daretocare.org" target="_blank" rel="noopener">Visit Website</a>
+            </div>
+
+            <!-- Resource Card -->
+            <div class="card reveal">
+                <h3>🛟 Salvation Army of Louisville</h3>
+                <p>The Salvation Army of Louisville provides a range of services to help people in need, including food, shelter, clothing, and other essentials. The Salvation Army is open Monday through Friday from 8:00 AM to 4:00 PM.</p>
+                <p><strong>Phone:</strong> (502) 671-4900</p>
+                <a class="btn btn-secondary" href="https://southernusa.salvationarmy.org/louisville/home" target="_blank" rel="noopener">Visit Website</a>
+            </div>
+
+            <!-- Resource Card -->
+            <div class="card reveal">
+                <h3>🏠 Recenterministries</h3>
+                <p>Recenterministries provides emergency shelter, hot meals, and recovery programs for men experiencing homelessness. Open 24/7 for emergencies.</p>
+                <p><strong>Phone:</strong> (502) 584-6543</p>
+                <a class="btn btn-secondary" href="https://recenterministries.org/" target="_blank" rel="noopener">Visit Website</a>
+            </div>
+
+            <!-- Resource Card -->
+            <div class="card reveal">
+                <h3>🤝 Coalition for the Homeless</h3>
+                <p>Connects people experiencing homelessness with housing, outreach services, and community support across the Louisville area.</p>
+                <p><strong>Phone:</strong> (502) 637-2337</p>
+                <a class="btn btn-secondary" href="https://louhomeless.org" target="_blank" rel="noopener">Visit Website</a>
+            </div>
+
+            <!-- Resource Card -->
+            <div class="card reveal">
+                <h3>💙 Seven Counties Services</h3>
+                <p>Offers mental health counseling, substance use support, and crisis services for all ages. Their 24/7 crisis line is available anytime.</p>
+                <p><strong>Crisis Line:</strong> (502) 589-1100</p>
+                <a class="btn btn-secondary" href="https://sevencounties.org" target="_blank" rel="noopener">Visit Website</a>
+            </div>
+
+            <!-- Resource Card -->
+            <div class="card reveal">
+                <h3>🏥 Family Health Centers</h3>
+                <p>Family Health Centers of Louisville provides primary care, dental, and mental health services on a sliding-fee scale for uninsured and low-income patients.</p>
+                <a class="btn btn-secondary" href="https://www.fhclouisville.org/" target="_blank" rel="noopener">Visit Website</a>
+            </div>
+
+            <!-- Resource Card -->
+            <div class="card reveal">
+                <h3>📞 988 Suicide &amp; Crisis Lifeline</h3>
+                <p>Free, confidential support for anyone in emotional distress or suicidal crisis. Available 24/7 — just call or text 988 from anywhere in the US.</p>
+                <p><strong>Call or Text:</strong> 988</p>
+                <a class="btn btn-secondary" href="https://988lifeline.org" target="_blank" rel="noopener">Visit Website</a>
+            </div>
+
+            <!-- Resource Card -->
+            <div class="card reveal">
+                <h3>🛡️ YMCA Safe Place</h3>
+                <p>A nationwide program offering immediate safety for youth in crisis. Look for the Safe Place sign at participating Louisville locations, or call the hotline for help finding shelter and support.</p>
+                <p><strong>Hotline:</strong> (502) 635-5233</p>
+                <a class="btn btn-secondary" href="https://www.ymcalouisville.org/locations/safe-place" target="_blank" rel="noopener">Visit Website</a>
+            </div>
+
+        </div>
+        <p id="noResults" style="display:none;">No resources found.</p>
+    </section>
+</section>
+
+<!-- Suggest a Resource -->
+<section class="contact-form container">
+    <div class="contact-header">
+        <h2 class="contact-title">Suggest a Resource</h2>
+        <p class="contact-lead">Know something we're missing? Fill out the form and we'll review it.</p>
+    </div>
+    <div class="form-wrapper">
+        <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSeantTjAnFjl5MZy-DY9Tltdz3QR-_Jv_P8bMQIfwqrMn3vOQ/viewform?usp=header"
+            width="100%"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            title="Suggest a resource"
+            loading="lazy">
+            Loading…
+        </iframe>
+    </div>
+</section>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-about">
+                <h3>Fairdale Circle of Care</h3>
+                <p>Building compassion through action — helping our local homeless community, one step at a time.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:dhara.patel@stu.jefferson.kyschools.us">dhara.patel@stu.jefferson.kyschools.us</a></p>
+                <p>Phone: <a href="tel:+15024858248">(502) 485-8248</a></p>
+                <p>Address: 1001 Fairdale Rd, Louisville, KY 40118</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Fairdale Circle of Care. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

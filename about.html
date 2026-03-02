@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fairdale Circle of Care | About Us</title>
+    <script>
+      (function() {
+        var theme = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var isDark = theme === 'dark' || (!theme && prefersDark);
+        document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+      })();
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="images/Fairdale_High_logo_template_300.png">
+</head>
+<body>
+
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <div class="brand">
+                <a href="index.html" class="logo">
+                        <img src="https://cmsv2-assets.apptegy.net/uploads/21334/logo/24148/Fairdale_High_logo_template_300.png" alt="Fairdale Circle of Care Logo" />
+                        <h1 class="site-title">Fairdale Circle of Care</h1>
+                </a>
+                <p class="site-tagline">Building compassion through action — helping our local homeless community, one step at a time.</p>
+            </div>
+
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="site-nav" role="navigation" aria-label="Main navigation">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <label class="theme-switch" aria-label="Toggle dark mode">
+                <input type="checkbox" id="theme-toggle" class="theme-checkbox" />
+                <span class="theme-icon theme-icon-sun" aria-hidden="true">☀</span>
+                <span class="slider"></span>
+                <span class="theme-icon theme-icon-moon" aria-hidden="true">☽</span>
+            </label>
+            <script>(function(){ var t = document.documentElement.getAttribute('data-theme'); var c = document.getElementById('theme-toggle'); if(c) c.checked = (t === 'dark'); })();</script>
+        </div>
+    </header>
+
+    <main id="main" class="hero hero-inner-page hero-about" role="main">
+        <div class="container hero-inner">
+            <div class="hero-content reveal">
+                <h2 class="hero-title">About Us</h2>
+                <p class="hero-lead">
+                        We believe real change starts with community. Our mission is to inspire students and neighbors to work together,
+    share knowledge, and build a better future. From hands-on learning to local initiatives, we’re dedicated to growth, connection, and making a positive impact that lasts.
+</p>
+
+                <p class="hero-note">Change begins with us — learning, growing, and giving back together.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- About Sections -->
+    <section class="about-content" aria-labelledby="about-heading">
+        <div class="container">
+            <h2 id="about-heading" class="reveal">About Fairdale Circle of Care</h2>
+            <p class="reveal">We are a student-led organization dedicated to supporting our local homeless community through compassion, action, and collaboration. Founded by passionate students at Fairdale High School, we believe in making a tangible difference in our neighborhood.</p>
+
+            <div class="about-grid" data-stagger>
+                <div class="about-item reveal">
+                    <h3>Our Vision</h3>
+                    <p>To create a community where everyone has access to basic needs, support, and hope for a better future.</p>
+                </div>
+                <div class="about-item reveal">
+                    <h3>Our Goals</h3>
+                    <ul>
+                        <li>Provide immediate assistance to those in need</li>
+                        <li>Educate and raise awareness about homelessness</li>
+                        <li>Foster long-term community partnerships</li>
+                        <li>Empower students to become community leaders</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="images/IMG_8300 copy.JPG" alt="Boxes of donated items" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Founders Section -->
+    <section class="founders-section" aria-labelledby="founders-heading">
+        <div class="container">
+            <h2 id="founders-heading">Our Founders</h2>
+            <p>Fairdale Circle of Care was founded by a group of dedicated students who recognized the need for change in our community. Meet the visionary leaders who started this movement:</p>
+
+            <div class="founders-grid" data-stagger>
+                <div class="founder-card reveal">
+                    <img src="images/8A31B885-EFE0-4220-A9C0-D45A6B406CCF.JPG" alt="Kyleigh Salmon" class="founder-image">
+                    <div class="founder-info">
+                    <h3>Kyleigh Salmon</h3>
+                    <p class="role">Co-Founder & Project Coordinator</p>
+                    <p class="bio">I’m a junior at Fairdale High School with a passion for social justice and community service. I helped start Fairdale Circle of Care after seeing how many families in my community struggled with food, especially during the holidays. Turning a simple food drive into a student-led competition showed me how powerful compassion and teamwork can be.</p>
+                    <p class="quote">"Small actions can make a big difference when people come together."</p>
+                    <p><a href="contact.html" class="Email">Contact us</a></p>
+                </div>
+                </div>
+                <div class="founder-card reveal">
+                    <img src="images/susan circle of care.jpg" alt="Susan Calderon Hernandez" class="founder-image">
+                    <div class="founder-info">
+                    <h3>Susan Calderon Hernandez</h3>
+                    <p class="role">Co-Founder & Communications Lead</p>
+                    <p class="bio">I’m a junior at Fairdale High School, and growing up in an immigrant household shaped my passion for supporting families in need. Through Fairdale Circle of Care, I helped spread awareness across our school and organize a food drive in our first project that brought our community together, collecting over 600 food items in just one week.</p>
+                    <p class="quote">"Being able to help others in a way I relate to is what makes this work meaningful."</p>
+                    <p><a href="contact.html" class="Email">Contact us</a></p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="get-involved-cta about-cta">
+        <div class="container">
+            <div class="cta-content reveal">
+                <h2>Ready to Get Involved?</h2>
+                <p>Join us in making a difference. Whether you want to volunteer, support our projects, or learn more, we'd love to hear from you.</p>
+                <div class="cta-buttons">
+                    <a class="btn btn-primary" href="get-involved.html">Get Involved</a>
+                    <a class="btn btn-secondary" href="contact.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-about">
+                <h3>Fairdale Circle of Care</h3>
+                <p>Building compassion through action — helping our local homeless community, one step at a time.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:dhara.patel@stu.jefferson.kyschools.us">dhara.patel@stu.jefferson.kyschools.us</a></p>
+                <p>Phone: <a href="tel:+15024858248">(502) 485-8248</a></p>
+                <p>Address: 1001 Fairdale Rd, Louisville, KY 40118</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Fairdale Circle of Care. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
