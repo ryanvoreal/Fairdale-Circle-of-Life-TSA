@@ -4758,6 +4758,17 @@ html[data-theme="dark"] .about-content h2 {
   color: var(--soft-gold);
 }
 
+/* References page: make links stand out in dark mode */
+html[data-theme="dark"] .about-content a {
+  color: #b8d4e8;
+  text-decoration: underline;
+  text-decoration-color: rgba(184, 212, 232, 0.5);
+  text-underline-offset: 0.2em;
+}
+html[data-theme="dark"] .about-content a:hover {
+  color: var(--soft-gold);
+  text-decoration-color: var(--soft-gold);
+}
 
 
 html[data-theme="dark"] .founders-section {
