@@ -643,6 +643,7 @@ html[data-theme="dark"] body{
     url("images/h-u-phu-6qt7cVSN6uc-unsplash.jpg");
   background-size: cover;
   background-position: center;
+  display: none;
 }
 
 /* Contact page */
